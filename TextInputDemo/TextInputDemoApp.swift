@@ -11,7 +11,9 @@ import SwiftUI
 struct TextInputDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                LoginView()
+            }
         }
     }
 }
