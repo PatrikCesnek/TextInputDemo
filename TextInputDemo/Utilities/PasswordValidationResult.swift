@@ -18,19 +18,19 @@ struct PasswordValidator {
         [
             PasswordValidationResult(
                 isValid: password.count >= 8,
-                message: "Minimálne 8 znakov"
+                message: Constants.Strings.atLeast8Characters
             ),
             PasswordValidationResult(
                 isValid: password.range(of: "[A-Z]", options: .regularExpression) != nil,
-                message: "Aspoň jedno veľké písmeno"
+                message: Constants.Strings.capitalLetterNeeded
             ),
             PasswordValidationResult(
                 isValid: password.range(of: "[0-9]", options: .regularExpression) != nil,
-                message: "Aspoň jedno číslo"
+                message: Constants.Strings.numberNeeded
             ),
             PasswordValidationResult(
                 isValid: password.range(of: "[!@#$&*?%/]", options: .regularExpression) != nil,
-                message: "Aspoň jeden špeciálny znak (? = # / %)"
+                message: Constants.Strings.specialCharacterNeeded
             )
         ]
     }

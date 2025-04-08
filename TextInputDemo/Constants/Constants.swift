@@ -17,6 +17,10 @@ struct Constants {
         static let password = "Password"
         static let passwordPlaceholder = "Enter your password"
         static let optional = "Optional"
+        static let atLeast8Characters = "Minimálne 8 znakov"
+        static let capitalLetterNeeded = "Aspoň jedno veľké písmeno"
+        static let numberNeeded = "Aspoň jedno číslo"
+        static let specialCharacterNeeded = "Aspoň jeden špeciálny znak (? = # / %)"
     }
     
     struct SystemImages {
